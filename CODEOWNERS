@@ -1,0 +1,29 @@
+################################################################################
+#                                                                              #
+#                                 CODEOWNERS                                   #
+#                                                                              #
+################################################################################
+
+# Global ownership - requires architect approval for all changes
+* @project-architect
+
+######################################################################
+
+# The following lines allow developers to push changes to the overrides file with
+# only the approval of team members, wi thout waiting for an architect.
+
+deployments/dev/override.yaml @ORG_NAME/dev-team @or-individuals
+deployments/uat/override.yaml @ORG_NAME/dev-team @or-individuals
+
+#######################################################################
+
+# The following lines allow developers to push changes to proxy configurations with
+# only the approval of team members, without waiting for an architect.
+
+deployments/dev/proxies.yaml @ORG_NAME/dev-team
+deployments/uat/proxies.yaml @ORG_NAME/dev-team
+
+#######################################################################
+
+# For more information about codeowners:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
